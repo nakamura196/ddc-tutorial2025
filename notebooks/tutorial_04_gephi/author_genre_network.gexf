@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2025-12-08">
+    <creator>NetworkX 3.5</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <attributes mode="static" class="node">
+      <attribute id="0" title="node_type" type="string" />
+    </attributes>
+    <nodes>
+      <node id="著者:中島 広足" label="中島 広足">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:賀茂 真淵" label="賀茂 真淵">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:橋本 貞秀" label="橋本 貞秀">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:香川 景樹" label="香川 景樹">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:緑亭 川柳" label="緑亭 川柳">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:為永春水" label="為永春水">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:十返舎一九" label="十返舎一九">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:山東 京山" label="山東 京山">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="著者:緑亭川柳" label="緑亭川柳">
+        <attvalues>
+          <attvalue for="0" value="著者" />
+        </attvalues>
+      </node>
+      <node id="ジャンル:詩歌" label="詩歌">
+        <attvalues>
+          <attvalue for="0" value="ジャンル" />
+        </attvalues>
+      </node>
+      <node id="ジャンル:日本文学" label="日本文学">
+        <attvalues>
+          <attvalue for="0" value="ジャンル" />
+        </attvalues>
+      </node>
+      <node id="ジャンル:小説．物語" label="小説．物語">
+        <attvalues>
+          <attvalue for="0" value="ジャンル" />
+        </attvalues>
+      </node>
+      <node id="ジャンル:古代後期［中古］：平安時代" label="古代後期［中古］：平安時代">
+        <attvalues>
+          <attvalue for="0" value="ジャンル" />
+        </attvalues>
+      </node>
+      <node id="ジャンル:和歌．短歌" label="和歌．短歌">
+        <attvalues>
+          <attvalue for="0" value="ジャンル" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="著者:中島 広足" target="ジャンル:古代後期［中古］：平安時代" id="0" weight="1" />
+      <edge source="著者:中島 広足" target="ジャンル:和歌．短歌" id="1" weight="4" />
+      <edge source="著者:中島 広足" target="ジャンル:日本文学" id="2" weight="21" />
+      <edge source="著者:中島 広足" target="ジャンル:詩歌" id="3" weight="6" />
+      <edge source="著者:賀茂 真淵" target="ジャンル:古代後期［中古］：平安時代" id="4" weight="1" />
+      <edge source="著者:賀茂 真淵" target="ジャンル:和歌．短歌" id="5" weight="1" />
+      <edge source="著者:賀茂 真淵" target="ジャンル:日本文学" id="6" weight="3" />
+      <edge source="著者:賀茂 真淵" target="ジャンル:詩歌" id="7" weight="3" />
+      <edge source="著者:橋本 貞秀" target="ジャンル:小説．物語" id="8" weight="1" />
+      <edge source="著者:香川 景樹" target="ジャンル:和歌．短歌" id="9" weight="1" />
+      <edge source="著者:香川 景樹" target="ジャンル:日本文学" id="10" weight="4" />
+      <edge source="著者:香川 景樹" target="ジャンル:詩歌" id="11" weight="4" />
+      <edge source="著者:緑亭 川柳" target="ジャンル:日本文学" id="12" weight="6" />
+      <edge source="著者:緑亭 川柳" target="ジャンル:詩歌" id="13" weight="4" />
+      <edge source="著者:為永春水" target="ジャンル:小説．物語" id="14" weight="5" />
+      <edge source="著者:為永春水" target="ジャンル:日本文学" id="15" weight="1" />
+      <edge source="著者:十返舎一九" target="ジャンル:小説．物語" id="16" weight="2" />
+      <edge source="著者:十返舎一九" target="ジャンル:日本文学" id="17" weight="2" />
+      <edge source="著者:山東 京山" target="ジャンル:小説．物語" id="18" weight="6" />
+      <edge source="著者:山東 京山" target="ジャンル:日本文学" id="19" weight="1" />
+      <edge source="著者:緑亭川柳" target="ジャンル:日本文学" id="20" weight="2" />
+    </edges>
+  </graph>
+</gexf>
