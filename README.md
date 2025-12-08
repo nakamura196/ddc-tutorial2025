@@ -11,13 +11,16 @@ DDセンターブリーフィング「データ駆動型人文学研究入門」
 ```
 ddc-tutorial2025/
 ├── data/                          # データファイル
-│   ├── ndl_sru_grouped_result.csv      # NDL SRU検索結果（元データ）
-│   ├── ndl_sru_for_rawgraphs.csv       # RAWGraphs用に正規化したデータ
-│   ├── ndl_sru_for_rawgraphs_exclude1800.csv  # 年代不明(1800)を除外したデータ
-│   └── ndc9_class91_hierarchical.csv   # NDC9 91類の階層構造
-├── scripts/                       # スクリプト
-│   ├── convert_for_rawgraphs.py        # データ変換スクリプト
-│   └── fetch_ndc_labels.py             # NDCラベル取得スクリプト
+│   └── ndl_sru_grouped_result.csv      # NDL SRU検索結果（元データ）
+├── notebooks/                     # Jupyter Notebooks（Google Colab対応）
+│   ├── tutorial_01_rawgraphs/         # RAWGraphs用データ変換
+│   │   ├── fetch_ndc_labels.ipynb         # NDCラベル取得
+│   │   ├── convert_for_rawgraphs.ipynb    # データ変換
+│   │   └── *.csv                          # 出力データ
+│   ├── tutorial_03_palladio/          # Palladio用データ変換
+│   │   └── tutorial_03_palladio.ipynb
+│   └── tutorial_04_gephi/             # Gephi Lite用ネットワークデータ
+│       └── tutorial_04_gephi.ipynb
 ├── README.md
 ├── LICENSE
 └── CONTRIBUTING.md
@@ -55,27 +58,36 @@ RAWGraphsでの可視化用に正規化したデータです。
 - URL: https://voyant-tools.org/
 - テキスト分析（語頻度、共起、トレンドなど）
 
-## スクリプトの使い方
+### Palladio
+- URL: https://hdlab.stanford.edu/palladio/
+- 地図・ネットワーク・時系列の可視化
 
-### データ変換
+### Gephi Lite
+- URL: https://gephi.org/gephi-lite/
+- ネットワーク分析・可視化（Webブラウザで動作）
 
-```bash
-python3 scripts/convert_for_rawgraphs.py
-```
+## ノートブックの使い方
 
-元データ（`ndl_sru_grouped_result.csv`）をRAWGraphs用に変換します。
+各ノートブックは **Google Colab** で直接開くことができます。ノートブック冒頭の「Open in Colab」バッジをクリックしてください。
 
-### NDCラベル取得
+### tutorial_01_rawgraphs
 
-```bash
-# 91類（日本文学）全体を取得
-python3 scripts/fetch_ndc_labels.py
+| ノートブック | 説明 | Colab |
+|-------------|------|-------|
+| fetch_ndc_labels.ipynb | ジャパンサーチからNDCラベルを取得 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nakamura196/ddc-tutorial2025/blob/main/notebooks/tutorial_01_rawgraphs/fetch_ndc_labels.ipynb) |
+| convert_for_rawgraphs.ipynb | NDL検索結果をRAWGraphs用に変換 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nakamura196/ddc-tutorial2025/blob/main/notebooks/tutorial_01_rawgraphs/convert_for_rawgraphs.ipynb) |
 
-# 特定の類を取得
-python3 scripts/fetch_ndc_labels.py 911
-```
+### tutorial_03_palladio
 
-ジャパンサーチのSPARQLエンドポイントからNDC9のラベルを取得します。
+| ノートブック | 説明 | Colab |
+|-------------|------|-------|
+| tutorial_03_palladio.ipynb | Palladio用データ変換 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nakamura196/ddc-tutorial2025/blob/main/notebooks/tutorial_03_palladio/tutorial_03_palladio.ipynb) |
+
+### tutorial_04_gephi
+
+| ノートブック | 説明 | Colab |
+|-------------|------|-------|
+| tutorial_04_gephi.ipynb | Gephi Lite用ネットワークデータ作成 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nakamura196/ddc-tutorial2025/blob/main/notebooks/tutorial_04_gephi/tutorial_04_gephi.ipynb) |
 
 ## 参考リンク
 
